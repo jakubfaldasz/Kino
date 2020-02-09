@@ -17,8 +17,8 @@ Aplikacja posiada trzy różne interfejsy pozwalające na wykonywanie czynności
 
 ## Działanie aplikacji
 
-![alt text](https://imgur.com/v3bGwEV "Employees")
-![alt text](https://imgur.com/6lbSS4g "Whats on")
-![alt text](https://imgur.com/2c72bGV "Reviews")
+![alt text](https://i.imgur.com/v3bGwEV.png "Employees")
+![alt text](https://i.imgur.com/6lbSS4g.png "Whats-on")
+![alt text](https://i.imgur.com/2c72bGV.png "Reviews")
 
     
