@@ -1,0 +1,33 @@
+﻿@model KinoDotNetCore.Models.Opinie
+@{
+    ViewData["Title"] = "Dodaj opinie";
+}
+
+<h1>Dodaj opinie</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddOpinion">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Ocena" class="control-label"></label>
+                <input asp-for="Ocena" class="form-control" />
+                <span asp-validation-for="Ocena" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrescOpinii" class="control-label"></label>
+                <input asp-for="TrescOpinii" class="form-control" />
+                <span asp-validation-for="TrescOpinii" class="text-danger"></span>
+            </div>
+            <input class="d-none" asp-for="FilmId" value="@ViewBag.FilmId" />
+            <div class="form-group">
+                <input type="submit" value="Dodaj opinie" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

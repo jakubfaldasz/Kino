@@ -1,0 +1,45 @@
+﻿@model IEnumerable<KinoDotNetCore.Models.Opinie>
+
+@{
+    ViewData["Title"] = "ShowOpinie";
+}
+
+<h1>Opinie filmu</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Film.Tytul)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Film.Rezyser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ocena)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TrescOpinii)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th>
+                    @Html.DisplayFor(modelItem => item.Film.Tytul)
+                </th>
+                <th>
+                    @Html.DisplayFor(modelItem => item.Film.Rezyser)
+                </th>
+                <th>
+                    @Html.DisplayFor(modelItem => item.Ocena)
+                </th>
+                <th>
+                    @Html.DisplayFor(modelItem => item.TrescOpinii)
+                </th>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,50 @@
+﻿@model IEnumerable<KinoDotNetCore.Models.Seanse>
+@{
+    ViewData["Title"] = "Seanse";
+}
+
+<h1>Seanse</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Filmy.Tytul)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Filmy.Rezyser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sale.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dzien)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Godzina)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <th>
+                @Html.DisplayFor(modelItem => item.Filmy.Tytul)
+            </th>
+            <th>
+                @Html.DisplayFor(modelItem => item.Filmy.Rezyser)
+            </th>
+            <th>
+                @Html.DisplayFor(modelItem => item.Sale.Id)
+            </th>
+            <th>
+                @Html.DisplayFor(modelItem => item.Dzien.Date)
+            </th>
+            <th>
+                @Html.DisplayFor(modelItem => item.Godzina.TimeOfDay)
+            </th>
+        </tr>
+        }
+    </tbody>
+</table>

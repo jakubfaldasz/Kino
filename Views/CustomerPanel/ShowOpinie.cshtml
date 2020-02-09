@@ -1,0 +1,35 @@
+﻿@model IEnumerable<KinoDotNetCore.Models.Opinie>
+
+@{
+    ViewData["Title"] = "ShowOpinie";
+}
+
+<h1>Opinie filmu @ViewBag.TytulFilmu</h1>
+<p>
+    <a asp-action="AddOpinion" asp-route-id="@ViewBag.IdFilmu">Dodaj opinie</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Ocena)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TrescOpinii)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th>
+                    @Html.DisplayFor(modelItem => item.Ocena)
+                </th>
+                <th>
+                    @Html.DisplayFor(modelItem => item.TrescOpinii)
+                </th>
+            </tr>
+        }
+    </tbody>
+</table>

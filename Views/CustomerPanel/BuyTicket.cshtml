@@ -1,0 +1,69 @@
+﻿@model KinoDotNetCore.Models.Bilety
+@{
+    ViewData["Title"] = "Kupno biletu";
+}
+
+<h1>Kupno biletu</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Klient.AdresEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Klient.Imie)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Klient.Nazwisko)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Seans.Dzien)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Seans.Godzina)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Seans.SaleId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Seans.Filmy.Tytul)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StanBiletu)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Klient.AdresEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Klient.Imie)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Klient.Nazwisko)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Seans.Dzien)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Seans.Godzina)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Seans.SaleId)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Seans.Filmy.Tytul)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.StanBiletu)
+            </td>
+        </tr>
+
+    </tbody>
+</table>

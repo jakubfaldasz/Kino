@@ -1,0 +1,59 @@
+﻿@model IEnumerable<KinoDotNetCore.Models.Filmy>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Tytul)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rezyser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RokProdukcji)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gatunek.NazwaGatunku)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ograniczenie.MinWiek)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tytul)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rezyser)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RokProdukcji)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gatunek.NazwaGatunku)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ograniczenie.MinWiek)
+            </td>
+            <td>
+                <a asp-action="ShowSeanse" asp-route-id="@item.Id">Sprawdź seanse</a> |
+                <a asp-action="ShowOpinie" asp-route-id="@item.Id">Sprawdź opinie</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Szczegóły</a> 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

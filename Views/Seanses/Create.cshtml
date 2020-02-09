@@ -1,0 +1,44 @@
+﻿@model KinoDotNetCore.Models.Seanse
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Seanse</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Dzien" class="control-label"></label>
+                <input asp-for="Dzien" class="form-control" />
+                <span asp-validation-for="Dzien" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Godzina" class="control-label"></label>
+                <input asp-for="Godzina" class="form-control" />
+                <span asp-validation-for="Godzina" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FilmyId" class="control-label"></label>
+                <select asp-for="FilmyId" class="form-control" asp-items="ViewBag.FilmyId"></select>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="SaleId" class="control-label"></label>
+                <select asp-for="SaleId" class="form-control" asp-items="ViewBag.SaleId"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
