@@ -1,19 +1,24 @@
 # Kino
-## Wstêp
-Aplikacja ma za zadanie obs³ugê serwisu Kina. 
+## WstÄ™p
+Aplikacja wykonana w ramach projektu z kursu **Bazy Danych 2**. Celem projektu byÅ‚o stworzenie aplikacji majÄ…cej za zadanie obsÅ‚ugÄ™ serwisu Kina. Wykonana w technologii **ASP.NET Core**.
 
-Aplikacja posiada trzy ró¿ne interfejsy pozwalaj¹ce na wykonywanie czynnoœci zwi¹zanych z trzema ró¿nymi grupami u¿ytkowników:
+Aplikacja posiada trzy rÃ³Å¼ne interfejsy pozwalajÄ…ce na wykonywanie czynnoÅ›ci zwiÄ…zanych z trzema rÃ³Å¼nymi grupami uÅ¼ytkownikÃ³w:
 
 1. Klient
     * logowanie
-    * przegl¹danie repertuaru
-    * przegl¹danie/dodawanie opinii filmom
+    * przeglÄ…danie repertuaru
+    * przeglÄ…danie/dodawanie opinii filmom
     * rezerwacja/kupno biletu
 2. Pracownik
     * zarzadzanie klientami (dodawanie, usuwanie, edycja)
 3. Administrator
-    * zarz¹dzanie pracownikami (dodawanie, usuwanie, edycja)
-    * zarz¹dzanie seansami
+    * zarzÄ…dzanie pracownikami (dodawanie, usuwanie, edycja)
+    * zarzÄ…dzanie seansami
 
+## DziaÅ‚anie aplikacji
+
+![alt text](https://imgur.com/v3bGwEV "Employees")
+![alt text](https://imgur.com/6lbSS4g "Whats on")
+![alt text](https://imgur.com/2c72bGV "Reviews")
 
     
