@@ -15,7 +15,7 @@ Aplikacja posiada trzy różne interfejsy pozwalające na wykonywanie czynności
     * zarządzanie pracownikami (dodawanie, usuwanie, edycja)
     * zarządzanie seansami
 
-Do poprawnego działania aplikacji konieczne jest zaimportowanie bazy danych SQL Server z pliku .bak dostępnego w repozytorium.
+**Do poprawnego działania aplikacji konieczne jest zaimportowanie bazy danych SQL Server z pliku .bak dostępnego w repozytorium.**
 
 ## Działanie aplikacji
 
